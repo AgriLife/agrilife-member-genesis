@@ -1,0 +1,135 @@
+/* These styles create the AgriLife Member bar at the top of the site footer. */
+
+.before-footer-cta {
+	background: #500000 !important;  
+	line-height: 1.5 !important;
+    text-align: left !important;
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+}
+.before-footer-cta .wrap {
+    max-width: 74rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+.before-footer-cta a {
+	border: none;
+    text-decoration: none;
+}
+.before-footer-cta, .before-footer-cta a, .before-footer-cta p, .before-footer-cta {
+    color: #fff;
+}
+.before-footer-cta a:hover, .before-footer-cta a:focus {
+    color: #f6f6f6;
+    text-decoration: underline;
+}
+#member-wrap {
+    margin-top: 30px;
+	margin-bottom: 30px;
+}
+#a-bg {
+    background: url(/wp-content/plugins/agrilife-member-genesis/images/agrilife-a-footer.svg);
+    background-repeat: no-repeat;
+    content: "";
+    background-size: cover;
+	background-position: left top;
+    display: block;
+    position: absolute;
+    width: 225px;
+    height: 125px;
+    z-index: 0;
+    opacity: 0.2;
+    margin-top: -1.75rem;
+}
+#member-agrilife {
+    flex-basis: 18%;
+    border-right: 1px solid rgba(255, 255, 255, .5);
+}
+#member-agrilife .member-text {
+	font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    color: #eaeaea;
+	letter-spacing: 1px;
+    font-size: 1.25rem;
+    line-height: 1.875rem;
+    margin-bottom: 0;
+	font-weight: 300;
+}
+#member-agrilife .member-brand {
+	font-weight: 500;
+    color: #fff;
+}
+#member-list {
+    flex-basis: 80%;
+	border-left: 1px solid rgba(255, 255, 255, .5);
+    padding-left: 2rem;
+	margin-left: 0;
+}
+#member-list p {
+    font-size: 1rem;
+	padding-top: 5px;
+    margin-bottom: 0;
+}
+
+/* media queries */
+
+@media (max-width: 80rem) {
+
+	.before-footer-cta .wrap {
+		max-width: 60rem;
+	}
+}
+
+
+@media (max-width: 64rem) {
+
+	.before-footer-cta .wrap {
+		max-width: 45rem;
+	}
+	#a-bg {
+		width: 125px;
+    	height: 140px;
+		background-position: center;
+		background-size: contain !important;
+		background-repeat: no-repeat !important;
+		background: url(/wp-content/plugins/agrilife-member-genesis/images/agrilife-a-white.png);
+	} 
+
+}
+
+
+@media (max-width: 48rem) {
+
+	.before-footer-cta .wrap {
+		max-width: 100%;
+		padding-left: 5%;
+		padding-right: 5%;
+	} 
+	#member-wrap {
+		padding-top: 1rem;
+    	padding-bottom: 1rem;
+		margin-top: 0;
+		margin-bottom: 0;
+	}
+	#member-list {
+		flex-basis: 100% !important;
+		text-align: center;
+		margin-top: 2rem;
+		border: none !important;
+		padding-left: 0;
+	}
+	#member-agrilife {
+		flex-basis: 100% !important;
+		text-align: center;
+		border: none;
+        padding-top: 2rem;
+	}
+	#a-bg {
+		width: 90% !important;
+		background-position: center !important;
+		background-size: contain;
+		background-repeat: no-repeat;
+		background: url(/wp-content/plugins/agrilife-member-genesis/images/agrilife-a-white.png);
+	}
+} 
+
